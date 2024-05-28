@@ -1,0 +1,12 @@
+CEngine:
+- Platform agnostic (not touching mobile devices though)
+- Has a level editor (built in)
+- Input, event management
+- Playing audio
+- Asset management (Virtual file system)
+- Window abstraction
+- 2D (for now) OpenGL renderer
+- Scripting for game objects (C#, or something else)
+- Debugging (logging etc..)
+- Physics 
+- ECS
