@@ -1,3 +1,4 @@
 [submodule "CEngine/vendor/plog"]
 	path = CEngine/vendor/plog
 	url = https://github.com/SergiusTheBest/plog
+    ignore = dirty
