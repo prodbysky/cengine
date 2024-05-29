@@ -4,11 +4,12 @@
 
 #include <iostream>
 #include <plog/Appenders/IAppender.h>
+#include <plog/Log.h>
 
 #define CE_FATAL PLOGF
 #define CE_ERROR PLOGE
 #define CE_WARNING PLOGW
-#define CE_INFO PLOGF
+#define CE_INFO PLOGI
 #define CE_DEBUG PLOGD
 #define CE_VERBOSE PLOGS
 
