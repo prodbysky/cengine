@@ -1,3 +1,11 @@
-#include "../../CEngine/src/test.hpp"
+#include "application.hpp"
 
-int main() { CEngine::PrintTest(); }
+#include <CEngine.hpp>
+
+class SandBox : public CEngine::Application {
+public:
+    SandBox() {}
+    ~SandBox() {}
+};
+
+CEngine::Application* CEngine::CreateApplication() { return new SandBox(); }
