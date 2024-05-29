@@ -4,6 +4,8 @@
 #include <sstream>
 
 namespace CEngine {
+
+    // More abstract class to reduce code repetition
     class KeyEvent : public Event {
     public:
         inline int GetCode() const { return keycode; }

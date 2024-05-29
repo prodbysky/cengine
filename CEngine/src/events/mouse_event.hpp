@@ -4,6 +4,8 @@
 #include <sstream>
 
 namespace CEngine {
+
+    // More abstract class to reduce code repetition
     class MouseButtonEvent : public Event {
     public:
         inline int GetMouseButton() const { return button; }
