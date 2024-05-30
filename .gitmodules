@@ -2,3 +2,6 @@
 	path = CEngine/vendor/plog
 	url = https://github.com/SergiusTheBest/plog
     ignore = dirty
+[submodule "CEngine/vendor/GLFW"]
+	path = CEngine/vendor/GLFW
+	url = https://github.com/glfw/glfw
