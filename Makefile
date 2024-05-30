@@ -5,9 +5,9 @@ SandBoxDebug: CEngineDebug SandBox/src/*
 
 CEngineDebug: CEngine/src/* GLFW
 	echo "Building CEngine"
-	g++ -fPIC -c CEngine/src/application.cpp -c CEngine/src/log.cpp -I CEngine/vendor/plog/include/ -LCEngine/vendor/GLFW/build/src -lglfw3 -ICEngine/vendor/GLFW/include/
+	g++ -fPIC -c CEngine/src/window.cpp -c CEngine/src/application.cpp -c CEngine/src/log.cpp -I CEngine/vendor/plog/include/ -LCEngine/vendor/GLFW/build/src -lGL -lglfw3 -ICEngine/vendor/GLFW/include/ -ICEngine/src/
 	ld -relocatable application.o log.o -o CEngineT.o
-	g++ -shared -Wl,-soname,libCEngine.so -o bin/debug/CEngine/libCEngine.so application.o log.o
+	g++ -shared -Wl,-soname,libCEngine.so -o bin/debug/CEngine/libCEngine.so application.o log.o window.o -lGL -LCEngine/vendor/GLFW/build/src/ -lglfw3
 
 GLFW: CEngine/vendor/GLFW/**/*
 	cmake -S CEngine/vendor/GLFW/ -B CEngine/vendor/GLFW/build

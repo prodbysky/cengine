@@ -1,6 +1,6 @@
 #pragma once
 
-#include "key_event.hpp"
+#include "event.hpp"
 
 #include <sstream>
 namespace CEngine {
